@@ -1,0 +1,209 @@
+/* ================= GLOBAL RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.7;
+    color: #333;
+    background: #ffffff;
+    padding-top: 80px;
+}
+
+/* ================= NAVBAR ================= */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    z-index: 1000;
+}
+
+.nav-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+nav img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #007BFF;
+}
+
+/* ================= HERO (ALL PAGES) ================= */
+.hero,
+.about-hero {
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+                url('images/bg.png') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 160px 20px;
+}
+
+.hero h1,
+.about-hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p,
+.about-hero p {
+    font-size: 1.2em;
+}
+
+/* ================= SECTIONS ================= */
+.section {
+    padding: 100px 20px;
+}
+
+.light {
+    background: #f6f9fc;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.center {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* ================= GRID SYSTEM ================= */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* ================= CARDS ================= */
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+/* ================= STATS ================= */
+.stats-section {
+    background: #007BFF;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+}
+
+.stats-grid h2 {
+    font-size: 2.5em;
+}
+
+/* ================= HIGHLIGHT BOX ================= */
+.highlight-box {
+    background: #f6f9fc;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+/* ================= BUTTONS ================= */
+.btn-primary {
+    display: inline-block;
+    margin-top: 20px;
+    background: #007BFF;
+    color: white;
+    padding: 14px 35px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}
+
+/* ================= CONTACT FORM ================= */
+form {
+    display: grid;
+    gap: 20px;
+}
+
+input,
+textarea {
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: none;
+    height: 150px;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+    .two-column {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1,
+    .about-hero h1 {
+        font-size: 2.2em;
+    }
+}
