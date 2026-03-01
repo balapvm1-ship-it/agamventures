@@ -1,29 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Contact Us - AGAM Ventures</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agam Ventures | Contact</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Get a Free Quote</h1>
-    <p>Tell us what you need, and upload your files.</p>
 
-    <form>
-        Name:<br>
-        <input type="text" name="name"><br>
-        Email:<br>
-        <input type="email" name="email"><br>
-        Message:<br>
-        <textarea name="message"></textarea><br>
-        File Upload:<br>
-        <input type="file" name="file"><br><br>
-        <input type="submit" value="Submit">
+<nav>
+    <img src="images/logo.png" alt="Agam Ventures Logo">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="contact">
+    <h2>Get a Free Quote</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+        <input type="file" name="file" accept=".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx">
+        <input type="submit" value="Send Message">
     </form>
+    <p>📩 Email: info@agamventures.in</p>
+    <p>📞 Phone: +91-9600274199</p>
+    <p>Monday–Saturday, 9:00 AM – 6:00 PM</p>
+</section>
 
-    <h2>Contact Information</h2>
-    <p>Email: info@agamventures.in</p>
-    <p>Phone: +91 9600274199</p>
-    <p>Working Hours: Mon–Sat, 9:00 AM – 6:00 PM</p>
+<footer>
+    &copy; 2026 Agam Ventures. All rights reserved.
+</footer>
 
-    <a href="index.html">Home</a>
 </body>
 </html>
